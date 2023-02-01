@@ -3,6 +3,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-run npm install socket.io --save
+RUN npm install socket.io --save
 RUN npm run build
 EXPOSE 3030
