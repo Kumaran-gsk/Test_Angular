@@ -3,7 +3,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-WORKDIR /usr/src/app
-COPY package*.json ./
+ADD package*.json ./
 RUN npm run build
 EXPOSE 3030
