@@ -3,5 +3,5 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN ng build --configuration production
+RUN npm run build --prod
 EXPOSE 3030
